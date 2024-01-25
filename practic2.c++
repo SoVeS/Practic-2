@@ -15,7 +15,7 @@ int main()
             double x = 0;
             double y = 0;
 
-            std::cout <<"введите 2 числа";
+            std::cout <<"введите 2 числа: ";
             std::cin >> x >> y;
             std::cout << x+y;
             break;
@@ -24,7 +24,7 @@ int main()
             double x = 0;
             double y = 0;
 
-            std::cout <<"введите 2 числа";
+            std::cout <<"введите 2 числа: ";
             std::cin >> x >> y;
             std::cout <<x-y;
             break;
@@ -33,11 +33,11 @@ int main()
             double x = 0;
             double y = 0;
 
-            std::cout <<"введите 2 числа";
+            std::cout <<"введите 2 числа: ";
             std::cin >> x >> y;
             if (y == 0) 
             {
-                cout <<"на ноль делить нельзя!"; 
+                std::cout <<"на ноль делить нельзя!"; 
                 break;
             }
             std::cout <<x/y;
@@ -47,7 +47,7 @@ int main()
             double x = 0;
             double y = 0;
 
-            std::cout <<"введите 2 числа";
+            std::cout <<"введите 2 числа: ";
             std::cin >> x >> y;
             std::cout <<x*y;
             break;
@@ -55,26 +55,26 @@ int main()
         case 5:
             double x = 0;
             double y = 0;
-            std::cout <<"введите 2 числа";
+            std::cout <<"введите 2 числа: ";
             std::cin >> x >> y;
             std::cout <<pow(x,y);
             break;
 
         case 6:
             double x = 0;
-            std::cout <<"введите число";
+            std::cout <<"введите число: ";
             std::cin >> x;
             if (x <= 0)
             {
-                std::cout <<"Неверная операция";
+                std::cout <<"Неверная операция!";
                 break;
             }
-            cout << sqrt(x);
+            std::cout << sqrt(x);
             break;
 
         case 7:
             int x = 0;
-            std::cout <<"введите число";
+            std::cout <<"введите число: ";
             std::cin >> x;
             std::cout << x*0.01;
             break;
@@ -84,7 +84,7 @@ int main()
             int i;
             int y;
 
-            std::cout <<"введите число";
+            std::cout <<"введите число: ";
             std::cin >> x;
 
             y = 1;
@@ -94,7 +94,7 @@ int main()
             break;
 
         case 9:
-            std::cout <<"До свидания";
+            std::cout <<"До свидания!";
             break;
     }
 }   
